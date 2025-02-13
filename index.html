@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+    </head> 
+    <body>
+        <div class="container">
+            <div>
+                <h1 class="header_text">💖 Hey Dallu, Will You Be My Valentine? 💘🥰</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdG00bW5lb3kxaGVxbzFuNzlhNGt2czh0eHBwaGx6ZGViaGYwanBrMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HgccVZvMPi6LbQnRKV/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class="buttons">
+                <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+            </div>
+        </div>
+
+        <script>
+            function nextPage() {
+                window.location.href = "yes.html";
+            }
+
+            function moveButton() {
+                var x = Math.random() * (window.innerWidth - 200);
+                var y = Math.random() * (window.innerHeight - 100);
+                document.getElementById('noButton').style.transform = `translate(${x}px, ${y}px)`;
+            }
+        </script>
+    </body> 
+</html>
