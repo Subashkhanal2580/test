@@ -4,9 +4,19 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDdraHMza3U0ZXJ6ZjRzMXZveXF4bTF3ZTQ1bDI5YXZxbWRnYmVhMCZlcD12MV9pbnRlcm5naWZfYnlfaWQmY3Q9Zw/PQqHL0Zzx5wX3SIPhe/giphy.gif') no-repeat center center/cover;
+    background: #f0f0f0; /* Light background for the body */
 }
 
 .gif_container {
-    display: none; 
+    display: block; /* Show the GIF container */
+    position: absolute; /* Position it in the center of the page */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the GIF */
+}
+
+.gif_container img {
+    width: auto;  /* Ensure the image maintains its aspect ratio */
+    max-width: 100%; /* Prevent the image from overflowing the container */
+    max-height: 100%; /* Prevent the image from overflowing the container */
 }
